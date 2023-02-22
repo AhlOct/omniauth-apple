@@ -125,7 +125,6 @@ module OmniAuth
                 end
 
                 def verify_nonce!(id_token)
-                    byebug
                     invalid_claim! :nonce unless id_token[:nonce]
                 end
 
